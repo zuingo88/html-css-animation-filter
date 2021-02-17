@@ -1,0 +1,238 @@
+/* esercizio 1 */
+.ex-1-square {
+  transition: background-color 1.5s;
+}
+
+.ex-1-square:hover {
+  background-color: red;
+}
+
+/* esercizio 2 */
+.ex-2-square {
+  transition: width 3s;
+}
+
+.ex-2-square:active {
+  width: 100%;
+}
+
+/* esercizio 3 */
+.ex-3-square {
+  transition: border-radius 2s;
+}
+
+.ex-3-square:hover {
+  border-radius: 50%;
+}
+
+/* esercizio 4 */
+.ex-4-square {
+  transition: opacity 1.5s;
+}
+
+.ex-4-square:hover {
+  opacity: 0;
+}
+
+/* esercizio 5 */
+.ex-5-square {
+  transition: all 1s;
+}
+
+.ex-5-square:hover {
+  transform: scale(2);
+}
+
+.ex-5-square:active {
+  transform: scale(0.5);
+}
+
+/* esercizio 6 */
+.ex-6-img:hover {
+  filter: grayscale(1);
+}
+
+/* esercizio 7 */
+.ex-7-img {
+  transition: all 3s;
+}
+
+.ex-7-img:hover {
+  filter: blur(1px) invert(100%) contrast(150%) brightness(80%);
+}
+
+/* esercizio 8 */
+.ex-8-img {
+  transition: all 3s;
+}
+
+.ex-8-img:hover {
+  border-radius: 10px 20px 30px 50%;
+  filter: contrast(150%) sepia(1);
+}
+
+/* esercizio 9 */
+.ex-9-img {
+  transition: all 2s;
+}
+
+.ex-9-img:hover {
+  border-radius: 35px;
+  filter: saturate(160%) brightness(130%);
+  transform: scale(1.5);
+}
+
+/* esercizio 10 */
+.ex-10-icon {
+  animation: spin 1s infinite;
+}
+
+/* modificata solo per sport */
+@keyframes spin {
+    0% {
+        transform: rotate(5turn);
+    }
+}
+
+/* esercizio 11 */
+.ex-11-icon:hover {
+    animation: spin_trequarti 7s ease;
+}
+@keyframes spin_trequarti {
+    0% {
+        transform: rotate(0);
+    }
+
+    98% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+/* esercizio 12 */
+.ex-12-button:hover .ex-12-top-white {
+    animation: top_12 3s ease;
+}
+
+@keyframes top_12 {
+    0% {
+      left: 10%;
+    }
+
+    40% {
+      left: 55%;
+    }
+
+    60% {
+      left: 30%;
+      width: 60px;
+    }
+
+    90% {
+      left: 90%;
+      width: 10px;
+    }
+
+    100% {
+      left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: bottom_12 3s linear;
+}
+
+@keyframes bottom_12 {
+    0% {
+      right: 20%;
+      width: 60px;
+    }
+
+    50% {
+      right: 80%;
+      width: 30px;
+    }
+
+    100% {
+      right: 20%;
+      width: 60px;
+    }
+}
+
+/* esercizio 13 */
+.ex-13-button:hover .ex-13-top-white {
+    animation: top_13 10s linear;
+}
+
+@keyframes top_13 {
+    0% {
+      left: 10%;
+      top: -10px;
+    }
+
+    30% {
+      left: calc(100% - 30px);
+      top: -10px;
+    }
+
+    50% {
+      left: calc(100% - 30px);
+      top: calc(100% - 10px);
+    }
+
+    80% {
+      left: -10px;
+      top: calc(100% - 10px);
+    }
+
+    98% {
+      left: -10px;
+      top: -10px;
+    }
+
+
+    100% {
+      left: 10%;
+      top: -10px;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: bottom_13 10s linear;
+}
+
+@keyframes bottom_13 {
+    0% {
+      right: 10%;
+      bottom: -10px;
+    }
+
+    30% {
+      right: calc(100% - 50px);
+      bottom: -10px;
+    }
+
+    50% {
+      right: calc(100% - 50px);
+      bottom: calc(100% - 10px);
+    }
+
+    80% {
+      right: -30px;
+      bottom: calc(100% - 10px);
+    }
+
+    98% {
+      right: -30px;
+      bottom: -10px);
+    }
+
+
+    100% {
+      right: 10%;
+      bottom: -10px;
+    }
+}
